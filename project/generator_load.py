@@ -32,6 +32,6 @@ async def start_generator_load(url, total=100, concurrency=10):
         total_time = time.perf_counter() - start
 
     print("Done")
-    print("Total: ", total_time, "Done: ", len(latencies), "Errors: ", len(errors))
-    print("Avg: ", statistics.mean(latencies))
+    print("Total:", total_time, "Done:", len(latencies), "Errors:", len(errors))
+    print("Avg:", statistics.mean(latencies))
     print("")
